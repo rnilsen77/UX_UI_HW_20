@@ -1,7 +1,9 @@
 body{
     background-color: lightgray;
 }
-
+.nav-item{
+    text-align: right;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -148,8 +150,13 @@ header {
     height: 200px;
 }
 
+.jumbotron{
+    justify-content:center;
+    margin: 10px auto;
+}
+
 button {
-    padding: 7px;
+    padding: 12px;
     background-color: #54545a;
     color: white;
     font-size: 15px;
