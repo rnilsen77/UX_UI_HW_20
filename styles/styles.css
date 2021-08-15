@@ -1,0 +1,174 @@
+body{
+    background-color: lightgray;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#mySkills{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#myWork{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.h4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+}
+
+.headShot{
+    padding: 10px;
+}
+
+nav{
+    width: 72%;
+    padding: 1%;
+}
+
+header {
+    padding: 15px;
+    background-color: gray;
+  }
+
+  header ul {
+    float: right;
+  }
+
+  header li {
+    display: inline-block;
+    padding: 0px 5px;
+  }
+  
+  header p {
+    display: inline-block;
+  }
+
+ #heroImg{
+     text-align: center;
+     height: 400px;
+     padding: 25 px;
+ }
+
+ .content{
+     width: 500px;
+     margin: 0 auto;
+ }
+
+ footer {
+     background-color: #373738;
+     color: white;
+     text-align: left;
+     padding: 15px;
+ }
+
+ footer ul{
+     list-style: none;
+     padding-left: 5px;
+ }
+
+ footer li {
+     display: inline-block;
+     padding: 0px 7px;
+ }
+
+/*My UX Skills Container*/ 
+.flexContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexChild{
+    width: 33%;
+    padding: 50px;
+    text-align: center;
+    background-color: lightblue;
+    height: 320px;
+}
+
+/*Flex Grid of UX Work*/
+.workGrid{
+    display: grid;
+    /*align-items: center;*/
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 40% 60%;
+    background-color: lightskyblue;
+    padding: 20 px;
+    grid-template-areas:
+        "topRowImage topRow"
+        "bottomRowImage bottomRow"
+        ;
+}
+
+.tourGuide_image{
+    grid-area: topRowImage;
+    align-self: center;
+    padding: 10px;
+}
+
+.tourGuide_content{
+    grid-area: topRow;
+}
+
+.website_image{
+    grid-area: bottomRowImage;
+    padding: 10px;
+   align-self: center;
+}
+
+.website_content{
+    grid-area: bottomRow;
+}
+
+.gridChild{
+    text-align: center;
+    height: 200px;
+}
+
+button {
+    padding: 7px;
+    background-color: #54545a;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 600){
+    #categoryFlex{
+        flex-direction: column;
+    }
+
+    #categoryGrid{
+    grid-template-rows: 300px 300px 300 px 300 px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "tourguide_image"
+    "tourGuide_content"
+    "website_image"
+    "website_content"
+    ;
+    }
+}
